@@ -30,6 +30,10 @@
     letter-spacing: 0.5px;
     color: #9093A6;
 }
+.navbar__user img{
+    display: inline;
+    margin-right: 4px;
+}
 .navbar__basket{
     margin: 26px 48px 26px 74px;
     font-family: Martel Sans;
@@ -39,13 +43,112 @@
     letter-spacing: 0.5px;
     color: #9093A6;
 }
-        /* --------------- */
+.cart{
+    display: inline;
+    margin-right: 4px;
+}
+
+        /* burger-menu */
+
+.burger{
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 20px;
+    margin: auto;
+}
+.burger__menu{
+    position: absolute;
+    background-color: #9093A6;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    top: 9px;
+}
+.burger::before,
+.burger::after{
+    content: '';
+    background-color: #9093A6;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    right: 0;
+}
+.burger::before{
+    top: 0;
+}
+.burger::after{
+    bottom: 0;
+}
+
+.burger__menu__list{
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #FFF;
+    height: 100%;
+    border: 1px solid #000;
+}
+.burger__menu__list div:not(.burger__menu__list__inner-div__first-block){
+    padding: 22px 42px;
+}
+.number{
+    font-family: Martel Sans;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    color: #3F4255;
+}
+.burger__menu__list__inner-div__first-block{
+    display: flex;
+}
+.burger__menu__list__inner-div img{
+    margin-right: 13px;
+}
+.date{
+    font-family: Martel Sans;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    color: #9093A6;
+    margin-top: 5px;
+    align-items: center;
+    text-align: center;
+}
+.burger__menu__list p:not(.date){
+    font-family: Martel Sans;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    color: #9093A6;
+}
+
+.burger__menu__list__line-1__linear{
+    height: 1px;
+    background-color: #F2F4FA;
+}
+.burger__menu__list__sel{
+    display: flex;
+    justify-content: flex-end;
+}
+.burger__menu__list__sel select{
+    font-family: Martel Sans;
+    font-size: 12px;
+    font-weight: 800;
+    line-height: 16px;
+}
+        /* --------food------- */
 .food{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
-.food img{
+.rucola img{
+    max-width: 100%;
     margin-top: 25px;
 }
 @media (max-width: 576px){

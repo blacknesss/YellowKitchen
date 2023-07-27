@@ -15,9 +15,12 @@
         <nav class="nav">
           <a href="#"><img src="img/Logo.svg" alt="#" class="nav__logo" /></a>
           <div class="navbar">
-            <p class="navbar__user">Log in</p>
-            <p class="navbar__basket">0</p>
-            <span class="navbar__menu">M</span>
+            <p class="navbar__user"><img src="img/Outline.svg" alt="">Log in</p>
+            <p class="navbar__basket"><img class="cart" src="img/cart.svg" alt="#">0</p>
+            <div class="burger">
+               <span class="burger__menu"></span>
+            </div>
+            
           </div>
         </nav>
       </div>
@@ -25,6 +28,49 @@
     <section>
       <div class="container">
         <main class="food">
+          <div class="burger__menu__list">
+                <div class="burger__menu__list__inner-div">
+                    <div class="burger__menu__list__inner-div__first-block"><img src="img/call.svg" alt="#">
+                    <h1 class="number">0800 111 126</h1>
+                  </div>
+                    <p class="date">8:00 - 22:00</p>
+                </div>
+                <div class="burger__menu__list__line-1">
+                    <hr class="burger__menu__list__line-1__linear">
+                </div>
+                <div>
+                    <p>Delivery info</p>
+                </div>
+                <div class="burger__menu__list__line-1">
+                  <hr class="burger__menu__list__line-1__linear">
+                </div>
+                <div>
+                    <p>About us</p>
+                </div>
+                <div class="burger__menu__list__line-1">
+                  <hr class="burger__menu__list__line-1__linear">
+                </div>
+                <div>
+                    <p>Restaurants</p>
+                </div>
+                <div class="burger__menu__list__line-1">
+                  <hr class="burger__menu__list__line-1__linear">
+                </div>
+                <div>
+                    <p>Specialities</p>
+                </div>
+                <div class="burger__menu__list__line-1">
+                  <hr class="burger__menu__list__line-1__linear">
+                </div>
+                <div class="burger__menu__list__sel">
+                  <p>
+                    <select name="select">
+                      <option value="english">English</option>
+                      <option value="russian">Russian</option>
+                    </select>
+                  </p>
+                </div>
+            </div>
           <div class="food__left">
             <h1 class="food__left__h1">Your Food court</h1>
             <h1>at home</h1>
@@ -255,5 +301,6 @@
     </footer>
   </body>
 
+  <script src="https://code.jquery.com/jquery-3.7.0.slim.min.js"></script>
   <script defer src="js/main.js"></script>
 </html>
