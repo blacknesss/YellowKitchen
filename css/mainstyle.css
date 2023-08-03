@@ -137,6 +137,7 @@
     position: relative;
     width: 30px;
     height: 20px;
+    cursor: pointer;
     /* margin: auto; */
 }
 .burger__menu{
