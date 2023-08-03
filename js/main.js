@@ -1,5 +1,4 @@
-$(document).ready(function(){
-    $('.burger').click(function(event){
-        $('.burger,.burger__menu__list').toggleClass('active');
-    });
-});
+document.querySelector('.burger').addEventListener('click', function(){
+    this.classList.toggle('active');
+    document.querySelector('.burger__menu__list').classList.toggle('active');
+})
